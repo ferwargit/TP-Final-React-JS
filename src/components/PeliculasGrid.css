@@ -1,0 +1,18 @@
+/* Eres un experto y especialista profesional en CSS. Que hace el [justify-content: center;]? Mostrar en formato tabla su funcion, por favor. Muchas gracias */
+.moviesGrid{
+  display: grid;
+  /* Se utiliza para establecer el tamaño y la cantidad de columnas en una cuadrícula creada con display: grid */
+  grid-template-columns: repeat(auto-fill, 230px);
+  /* Establece un espacio de 40 píxeles entre las filas y/o columnas de una cuadrícula. */
+  gap: 40px;
+  /* Establece un espacio de relleno de 40 píxeles en todos los lados (arriba, abajo, izquierda y derecha) del contenido de un elemento. */
+  padding: 40px;
+  /* Alinea los elementos en el centro del eje horizontal del contenedor. */
+  justify-content: center;
+}
+
+@media (max-width:560px){
+  .moviesGrid{
+    grid-template-columns:100%;
+  }
+}

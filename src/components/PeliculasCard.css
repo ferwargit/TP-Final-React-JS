@@ -1,0 +1,32 @@
+/* Eres un experto y especialista profesional en CSS. Que hace el [list-style: none;]? Mostrar en formato tabla su funcion, por favor. Muchas gracias */
+.moviesCard{
+  /* Elimina completamente los marcadores o números de la lista. */
+  list-style: none;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.moviesCard:hover{
+  box-shadow: 0 0 11px gray;
+  border-radius: 10px;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+a{
+  text-decoration: none;
+}
+
+.movieImage{
+  border-radius: 10px;
+  background-color: azure;
+  width: 230px;
+  height: 345px;
+}
+
+@media(max-width:560px){
+  .movieImage{
+    width: 90%;
+    height: auto;
+  }
+}
